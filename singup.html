@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        function refreshSignupPage() {
+            // Simulate a signup process (you can replace this with actual logic)
+            alert("Signup successful!");
+            location.reload();  // This will refresh the page
+        }
+    </script>
+</head>
+<body class="bg-cover bg-center flex items-center justify-center" style="background-image: url('desktop---1.png'); min-height: 100vh;">
+    <div class="bg-white p-10 rounded-lg shadow-lg w-[400px]">
+        <h1 class="text-5xl text-center font-bold text-[#3751fe] mb-4">Signup</h1>
+        <p class="text-lg text-center text-black mb-8">You don't have an account? Please Signup</p>
+
+        <!-- Username Input -->
+        <div class="relative mb-4">
+            <input type="text" value="" class="w-full px-4 py-2 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-[#3751fe]" placeholder="Username" />
+            <span class="absolute right-3 top-2.5">
+                <img src="972105c5a775f38cf33d3924aea053f1-removebg-preview.png" alt="User Icon" class="w-6 h-6">
+            </span>
+        </div>
+
+        <!-- Email Input -->
+        <div class="relative mb-4">
+            <input type="email" value="" class="w-full px-4 py-2 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-[#3751fe]" placeholder="Email" />
+            <span class="absolute right-3 top-2.5">
+                <img src="email.png" alt="Email Icon" class="w-6 h-6">
+            </span>
+        </div>
+
+        <!-- Password Input -->
+        <div class="relative mb-6">
+            <input type="password" value="" class="w-full px-4 py-2 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-[#3751fe]" placeholder="Password" />
+            <span class="absolute right-3 top-2.5">
+                <img src="password_icon-removebg-preview.png" alt="Password Icon" class="w-6 h-6">
+            </span>
+        </div>
+
+        <!-- Buttons -->
+        <div class="flex justify-center space-x-4 mb-4">
+            <!-- Modify the Signup button to call the refreshSignupPage function -->
+            <button class="bg-[#3751fe] text-white py-2 px-8 rounded-full" id="signupBtn" onclick="refreshSignupPage()">Signup</button>
+            <!-- Add link to the login page -->
+            <a href="index.html">
+                <button class="bg-white border border-[#3751fe] text-[#3751fe] py-2 px-8 rounded-full">Login</button>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
